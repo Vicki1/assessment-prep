@@ -12,8 +12,7 @@ var myFavoriteColor= myFave + color;
 //4. Create an array of strings that includes the letters a - d in order.
 var aThroughD = ['a','b','c','d'];
 //5. Remove 'a' and store it to a variable called isForApple.
-var isForApple = aThroughD[0];
-aThroughD.splice(0,1);
+var isForApple = aThroughD.shift('a');
 // var isForApple = aThroughD.splice(0,1);
 //6. Add 'e' to the end of aThroughD.
 aThroughD.push('e');
@@ -45,7 +44,7 @@ var anakinSkywalker =  {
   former_significant_other: 'Padme Amidala',
   former_mother: 'Shmi Skywalker'
 }
-anakinSkywalker.side = 'dark';
+anakinSkywalker['side'] = 'dark';
 //12. Add 'Jar Jar' to his children using dot notation
 anakinSkywalker.children.push('Jar Jar')
 //13. Loop through the object and remove any property that starts with former
